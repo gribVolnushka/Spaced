@@ -1,0 +1,19 @@
+@mixin text() {
+  font-size: 1.8rem;
+  line-height: calc(22 / 18);
+  text-transform: uppercase;
+}
+
+@mixin paragraph() {
+  font-size: 1.8rem;
+  line-height: calc(26 / 18);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@mixin title() {
+  font-size: 6.4rem;
+  line-height: calc(64 / 61);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}

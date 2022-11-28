@@ -1,0 +1,45 @@
+.team {
+  padding-top: 133px;
+  padding-bottom: 180px;
+}
+
+.team__wrapper-content {
+  width: 512px;
+}
+
+.team__title {
+  @include title();
+  font-weight: map-get($font-weight,'bold');
+  color: map-get($colors,'secondary-black');
+  margin-bottom: 24px;
+}
+
+.team__text {
+  @include paragraph();
+  font-weight: map-get($font-weight,'medium');
+  color: map-get($colors,'secondary-black');
+  margin-bottom: 16px;
+}
+
+.team__paragraph {
+  @include paragraph();
+  font-weight: map-get($font-weight,'medium');
+  color: map-get($colors,'secondary-black');
+  margin-bottom: 36px;
+}
+
+.team__wrapper-button {
+  filter: drop-shadow(8px 4px 0 #00FFBB);
+}
+
+.team__button {
+  padding: 16px 28px 16px 16px;
+  background-color: map-get($colors,'secondary-black');
+  color: map-get($colors,'turquiose');
+  font-weight: map-get($font-weight,'bold');
+  font-size: 2.4rem;
+  line-height: calc(35 / 24);
+  letter-spacing: 0.05rem;
+  clip-path: polygon(0 0%, 100% 0%, 80% 100%, 0% 100%);
+  text-transform: uppercase;
+}

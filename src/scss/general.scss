@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.container {
+  width: 976px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  background-image:
+                    url("../static/Image/wave-background.svg"),
+                    linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%),
+                    url("../static/Image/sky-background.jpg");
+  background-repeat: no-repeat;
+  background-size:  contain,cover,cover;
+  background-position:
+                        bottom -7px left 0,
+                        top,
+                        center;
+}
+
+

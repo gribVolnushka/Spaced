@@ -75,6 +75,14 @@ textarea {
   resize: vertical;
 }
 
+select {
+  font-family: inherit;
+}
+
+option {
+  font-family: inherit;
+}
+
 /**
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */

@@ -1,0 +1,60 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 16px;
+  background-color: map-get($colors,'secondary-black');
+  color: #FFFFFF;
+}
+
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.footer__list-icon {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer__subtitle {
+  @include paragraph();
+  color: map-get($colors,'secondary-grey') ;
+}
+
+.footer__link {
+  @include paragraph();
+  color: map-get($colors,'primary-white') ;
+  font-weight: map-get($font-weight,'semibold');
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.footer__last-column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text {
+  font-weight: map-get($font-weight,'semibold');
+  font-size: 1.2rem;
+  line-height: calc(17 / 12);
+  color: map-get($colors,'primary-grey') ;
+  text-transform: uppercase;
+}

@@ -1,0 +1,112 @@
+.hero__section {
+  padding-top: 75px;
+  padding-bottom: 175px;
+}
+.hero__title {
+  font-weight: map-get($font-weight,'extrabold');
+  font-size: 9.6rem;
+  line-height: 1.2;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 480px;
+  margin-bottom: 125px;
+}
+
+.hero__wrapper-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 364px;
+  background-color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.hero__triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid #00FFBB;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #00FFBB;
+}
+
+.hero__wrapper-text {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__text {
+  @include text();
+  font-weight: map-get($font-weight,'bold');
+  color: #000000;
+  letter-spacing: 0.05rem;
+}
+
+.hero__paragraph {
+  @include text();
+  font-weight: map-get($font-weight,'medium');
+  color: #000000;
+  letter-spacing: 0.05rem;
+  text-decoration: underline;
+}
+
+.hero__triangle-up {
+  width: 0;
+  height: 0;
+  border-right: 20px solid #00FFBB;
+  border-left: 20px solid transparent;
+  border-bottom: 40px solid #00FFBB;
+}
+.hero__form {
+  width: 100%;
+  display: flex;
+}
+
+.hero__wrapper-form {
+  width: 774px;
+  display: flex;
+  gap: 25px;
+  padding: 32px 41px;
+  background-color: #FFFFFF;
+  background-image: url("../static/Image/grey-arrow-down.svg"),
+                    url("../static/Image/grey-arrow-down.svg"),
+                    url("../static/Image/grey-arrow-down.svg"),
+                    url("../static/Image/grey-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 45px left 190px,
+                       bottom 45px left 315px,
+                       bottom 45px right 285px,
+                       bottom 45px right 85px;
+}
+
+.hero__span {
+  @include text();
+  font-weight: map-get($font-weight,'medium');
+  letter-spacing: 0.05rem;
+  color: #828282;
+  margin-bottom: 1px;
+}
+
+.hero__select {
+  -webkit-appearance: unset;
+  background-color: transparent;
+  border: none;
+  color:  #292929;
+  font-weight: map-get($font-weight,'extrabold');
+  font-size: 3.6rem;
+  line-height: calc(43 / 36);
+  letter-spacing: 0.05rem;
+}
+
+.hero__button {
+  min-width: 200px;
+  background-color: #292929;
+  color: #00FFBB;
+  font-weight: map-get($font-weight,'bold');
+  font-size: 3.6rem;
+  line-height: calc(43 / 36);
+  letter-spacing: 0.08rem;
+}
+
