@@ -2,28 +2,40 @@
   padding-top: 32px;
   padding-bottom: 16px;
   background-color: map-get($colors,'secondary-black');
-  color: #FFFFFF;
+  color:  map-get($colors,'primary-white');
+
+  @include mobile-screen-desktop() {
+    padding-top: 15px;
+  }
 }
 
 .footer__container {
   display: flex;
   align-items: flex-start;
-  gap: 100px;
   justify-content: space-between;
+  gap: 40px;
   flex-wrap: wrap;
+
+  @include mobile-screen-desktop() {
+    justify-content: center;
+  }
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  justify-content: flex-start;
 }
 
 .footer__list-icon {
   display: flex;
   gap: 16px;
   align-items: center;
+
+  @include small-screen-desktop() {
+   gap: 10px;
+  }
+
 }
 
 .footer__list {
@@ -35,6 +47,10 @@
 .footer__subtitle {
   @include paragraph();
   color: map-get($colors,'secondary-grey') ;
+
+  @include mobile-screen-desktop() {
+    @include media-text();
+  }
 }
 
 .footer__link {
@@ -42,7 +58,14 @@
   color: map-get($colors,'primary-white') ;
   font-weight: map-get($font-weight,'semibold');
   text-decoration: underline;
-  text-transform: uppercase;
+
+  @include small-screen-desktop() {
+   @include media-text();
+  }
+
+  @include mobile-screen-desktop() {
+    @include small-text();
+  }
 }
 
 .footer__last-column {

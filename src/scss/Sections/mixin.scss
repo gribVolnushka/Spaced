@@ -4,6 +4,30 @@
   text-transform: uppercase;
 }
 
+@mixin wide-text() {
+  font-size: 1.6rem;
+  line-height: calc(20 / 16);
+  text-transform: uppercase;
+}
+
+@mixin media-text() {
+  font-size: 1.5rem;
+  line-height: calc(20 / 15);
+  text-transform: uppercase;
+}
+
+@mixin small-text() {
+  font-size: 1.3rem;
+  line-height: calc(18 / 13);
+  text-transform: uppercase;
+}
+
+@mixin xxs-size-text() {
+  font-size: 1rem;
+  line-height: calc(15 / 12);
+  text-transform: uppercase;
+}
+
 @mixin paragraph() {
   font-size: 1.8rem;
   line-height: calc(26 / 18);
@@ -16,4 +40,42 @@
   line-height: calc(64 / 61);
   text-transform: uppercase;
   letter-spacing: 0.05rem;
+}
+
+@mixin small-title() {
+  font-size: 5rem;
+  line-height: calc(54 / 50);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+@mixin mobile-title() {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+@mixin wide-screen-desktop() {
+  @media screen and (max-width: 1380px) {
+    @content
+  }
+}
+
+@mixin media-screen-desktop() {
+  @media screen and (max-width: 1250px) {
+    @content
+  }
+}
+
+@mixin small-screen-desktop() {
+  @media screen and (max-width: 960px) {
+    @content
+  }
+}
+
+@mixin mobile-screen-desktop() {
+  @media screen and (max-width: 768px) {
+    @content
+  }
 }

@@ -1,10 +1,35 @@
 .team {
   padding-top: 133px;
   padding-bottom: 180px;
+  background-image: url("../static/Image/squares.svg");
+  background-repeat: no-repeat;
+  background-position: right 150px bottom -100px;
+
+  @include media-screen-desktop () {
+    padding-top: 50px;
+    padding-bottom: 120px;
+  }
+
+  @include small-screen-desktop() {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-position: right 0 bottom -170px ;
+  }
+
+  @include mobile-screen-desktop() {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-image: unset;
+  }
 }
 
 .team__wrapper-content {
   width: 512px;
+
+  @include small-screen-desktop() {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .team__title {
@@ -12,6 +37,16 @@
   font-weight: map-get($font-weight,'bold');
   color: map-get($colors,'secondary-black');
   margin-bottom: 24px;
+
+  @include small-screen-desktop() {
+    @include small-title();
+    margin-bottom: 15px;
+  }
+
+  @include mobile-screen-desktop() {
+    @include mobile-title();
+    margin-bottom: 10px;
+  }
 }
 
 .team__text {
@@ -19,6 +54,15 @@
   font-weight: map-get($font-weight,'medium');
   color: map-get($colors,'secondary-black');
   margin-bottom: 16px;
+
+  @include small-screen-desktop() {
+    @include wide-text();
+    margin-bottom: 10px;
+  }
+
+  @include mobile-screen-desktop() {
+    margin-bottom: 7px;
+  }
 }
 
 .team__paragraph {
@@ -26,6 +70,15 @@
   font-weight: map-get($font-weight,'medium');
   color: map-get($colors,'secondary-black');
   margin-bottom: 36px;
+
+  @include small-screen-desktop() {
+    @include wide-text();
+    margin-bottom: 20px;
+  }
+
+  @include mobile-screen-desktop() {
+    margin-bottom: 10px;
+  }
 }
 
 .team__wrapper-button {
@@ -33,6 +86,7 @@
 }
 
 .team__button {
+  min-width: 200px;
   padding: 16px 28px 16px 16px;
   background-color: map-get($colors,'secondary-black');
   color: map-get($colors,'turquiose');
@@ -42,4 +96,11 @@
   letter-spacing: 0.05rem;
   clip-path: polygon(0 0%, 100% 0%, 80% 100%, 0% 100%);
   text-transform: uppercase;
+
+  @include mobile-screen-desktop() {
+    min-width: 100px;
+    padding: 10px 25px 10px 20px;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
 }

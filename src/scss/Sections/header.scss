@@ -1,18 +1,40 @@
 .header {
   padding-top: 32px;
   padding-bottom: 75px;
+
+  @include media-screen-desktop() {
+    padding-bottom: 35px;
+  }
+
+  @include small-screen-desktop() {
+    padding-bottom: 25px;
+
+    @include mobile-screen-desktop() {
+      padding-top: 15px;
+      padding-bottom: 5px;
+    }
+  }
 }
 
 .header__container {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @include mobile-screen-desktop() {
+    gap: 7px;
+  }
 }
 
 .header__wrapper-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include mobile-screen-desktop() {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .logo {
@@ -20,24 +42,29 @@
   font-size: 2.4rem;
   line-height: calc(29 / 24);
   letter-spacing: 0.2rem;
-  color: #FFFFFF ;
+  color: map-get($colors,'primary-white') ;
   text-transform: uppercase;
 }
 
 .header__wrapper-switch {
   display: flex;
+  align-items: center;
   gap: 40px;
   background-image: url("../static/Image/white-arrow-down.svg");
   background-repeat: no-repeat;
   background-position: left 62px bottom 9px;
+
+  @include mobile-screen-desktop() {
+    gap: 50px;
+  }
 }
 
-.header__select {
-  -webkit-appearance: unset;
+.header__switch {
   @include text();
+  -webkit-appearance: unset;
   font-weight: map-get($font-weight,'bold');
+  color: map-get($colors,'primary-white') ;
   letter-spacing: 0.05rem;
-  color: #FFFFFF;
   background-color: transparent;
   border: none;
 }
@@ -54,24 +81,54 @@
 .header__button {
   @include text();
   font-weight: map-get($font-weight,'bold');
-  color: #FFFFFF;
+  color: map-get($colors,'primary-white') ;
 }
 
 .header__list {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 35px;
-  background-color: #FFFFFF;
+  background-color:map-get($colors,'primary-white');
   padding: 16px 24px;
+
+
+  @include media-screen-desktop() {
+   gap: 20px;
+  }
+
+  @include small-screen-desktop() {
+    gap: 10px;
+  }
+
+  @include mobile-screen-desktop() {
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px;
+    background-color: unset;
+
+  }
 }
 
 .header__link {
   @include text();
   font-weight: map-get($font-weight,'semibold');
-  color: #828282;
+  color: map-get($colors,'primary-grey');
   letter-spacing: 0.05rem;
-}
+
+    @include small-screen-desktop() {
+      @include media-text();
+    }
+
+    @include mobile-screen-desktop() {
+      color: map-get($colors,'primary-white');
+    }
+
+  }
+
+
+
 
 
 

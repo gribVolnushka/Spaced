@@ -1,33 +1,60 @@
 .hero__section {
   padding-top: 75px;
   padding-bottom: 175px;
+
+  @include small-screen-desktop() {
+    padding-top: 25px;
+    padding-bottom: 90px;
+  }
+
+  @include mobile-screen-desktop() {
+    padding-top: 5px;
+    padding-bottom: 50px;
+  }
 }
 .hero__title {
+  width: 480px;
   font-weight: map-get($font-weight,'extrabold');
   font-size: 9.6rem;
   line-height: 1.2;
   letter-spacing: 0.06rem;
   text-transform: uppercase;
-  color: #FFFFFF;
-  width: 480px;
+  color: map-get($colors,'primary-white');
   margin-bottom: 125px;
+
+  @include media-screen-desktop() {
+    margin-bottom: 80px;
+  }
+
+  @include small-screen-desktop() {
+    width: 100%;
+    text-align: center;
+    font-size: 8.2rem;
+    margin-bottom: 60px;
+  }
+
+  @include mobile-screen-desktop() {
+    font-size: 5.2rem;
+    margin-bottom: 20px;
+  }
+
 }
 
 .hero__wrapper-content {
+  width: 364px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 364px;
-  background-color: #FFFFFF;
+  justify-content: center;
+  padding: 9px;
   margin-bottom: 8px;
-}
+  background-color: map-get($colors,'primary-white');
+  background-image:  linear-gradient( -65deg, #00FFBB 0% 11%, #FFFFFF 11% 89%, #00FFBB 89% 100% );
 
-.hero__triangle-down {
-  width: 0;
-  height: 0;
-  border-left: 20px solid #00FFBB;
-  border-right: 20px solid transparent;
-  border-top: 40px solid #00FFBB;
+  @include mobile-screen-desktop() {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 .hero__wrapper-text {
@@ -40,25 +67,26 @@
 .hero__text {
   @include text();
   font-weight: map-get($font-weight,'bold');
-  color: #000000;
+  color: map-get($colors,'primary-black');
   letter-spacing: 0.05rem;
+
+  @include mobile-screen-desktop() {
+    @include wide-text();
+  }
 }
 
 .hero__paragraph {
   @include text();
   font-weight: map-get($font-weight,'medium');
-  color: #000000;
+  color: map-get($colors,'primary-black');
   letter-spacing: 0.05rem;
   text-decoration: underline;
+
+  @include mobile-screen-desktop() {
+    @include wide-text();
+  }
 }
 
-.hero__triangle-up {
-  width: 0;
-  height: 0;
-  border-right: 20px solid #00FFBB;
-  border-left: 20px solid transparent;
-  border-bottom: 40px solid #00FFBB;
-}
 .hero__form {
   width: 100%;
   display: flex;
@@ -67,46 +95,93 @@
 .hero__wrapper-form {
   width: 774px;
   display: flex;
-  gap: 25px;
+  gap: 57px;
   padding: 32px 41px;
-  background-color: #FFFFFF;
+  background-color: map-get($colors,'primary-white');
   background-image: url("../static/Image/grey-arrow-down.svg"),
                     url("../static/Image/grey-arrow-down.svg"),
                     url("../static/Image/grey-arrow-down.svg"),
                     url("../static/Image/grey-arrow-down.svg");
   background-repeat: no-repeat;
   background-position: bottom 45px left 190px,
-                       bottom 45px left 315px,
-                       bottom 45px right 285px,
+                       bottom 45px left 320px,
+                       bottom 45px right 260px,
                        bottom 45px right 85px;
+
+  @include media-screen-desktop() {
+    background-image: unset;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  @include small-screen-desktop() {
+    width: 80%;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  @include mobile-screen-desktop() {
+    padding: 5px;
+  }
+
 }
 
 .hero__span {
   @include text();
+  display: block;
   font-weight: map-get($font-weight,'medium');
   letter-spacing: 0.05rem;
-  color: #828282;
+  color: map-get($colors,'primary-grey');
   margin-bottom: 1px;
+
+  @include small-screen-desktop() {
+    @include media-text();
+  }
+
+  @include mobile-screen-desktop() {
+    @include xxs-size-text();
+  }
+
 }
 
 .hero__select {
   -webkit-appearance: unset;
   background-color: transparent;
   border: none;
-  color:  #292929;
   font-weight: map-get($font-weight,'extrabold');
   font-size: 3.6rem;
+  color: map-get($colors,'tertiary-black');
   line-height: calc(43 / 36);
   letter-spacing: 0.05rem;
+
+  @include small-screen-desktop() {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+
+  @include mobile-screen-desktop() {
+    font-size: 1.5rem;
+  }
 }
 
 .hero__button {
   min-width: 200px;
-  background-color: #292929;
-  color: #00FFBB;
+  background-color: map-get($colors,'tertiary-black');
+  color: map-get($colors,'turquiose');
   font-weight: map-get($font-weight,'bold');
   font-size: 3.6rem;
   line-height: calc(43 / 36);
   letter-spacing: 0.08rem;
+
+  @include small-screen-desktop() {
+    min-width: 20%;
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+
+  @include mobile-screen-desktop() {
+    font-size: 1.4rem;
+  }
 }
 
