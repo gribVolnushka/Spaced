@@ -38,11 +38,11 @@
 }
 
 .logo {
-  font-weight: map-get($font-weight,'bold');
+  font-weight: map-get($font-weight, 'bold');
   font-size: 2.4rem;
   line-height: calc(29 / 24);
   letter-spacing: 0.2rem;
-  color: map-get($colors,'primary-white') ;
+  color: map-get($colors, 'primary-white');
   text-transform: uppercase;
 }
 
@@ -62,8 +62,8 @@
 .header__switch {
   @include text();
   -webkit-appearance: unset;
-  font-weight: map-get($font-weight,'bold');
-  color: map-get($colors,'primary-white') ;
+  font-weight: map-get($font-weight, 'bold');
+  color: map-get($colors, 'primary-white');
   letter-spacing: 0.05rem;
   background-color: transparent;
   border: none;
@@ -80,8 +80,8 @@
 
 .header__button {
   @include text();
-  font-weight: map-get($font-weight,'bold');
-  color: map-get($colors,'primary-white') ;
+  font-weight: map-get($font-weight, 'bold');
+  color: map-get($colors, 'primary-white');
 }
 
 .header__list {
@@ -90,12 +90,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 35px;
-  background-color:map-get($colors,'primary-white');
+  background-color: map-get($colors, 'primary-white');
   padding: 16px 24px;
 
 
   @include media-screen-desktop() {
-   gap: 20px;
+    gap: 20px;
   }
 
   @include small-screen-desktop() {
@@ -113,19 +113,19 @@
 
 .header__link {
   @include text();
-  font-weight: map-get($font-weight,'semibold');
-  color: map-get($colors,'primary-grey');
+  font-weight: map-get($font-weight, 'semibold');
+  color: map-get($colors, 'primary-grey');
   letter-spacing: 0.05rem;
 
-    @include small-screen-desktop() {
-      @include media-text();
-    }
-
-    @include mobile-screen-desktop() {
-      color: map-get($colors,'primary-white');
-    }
-
+  @include small-screen-desktop() {
+    @include media-text();
   }
+
+  @include mobile-screen-desktop() {
+    color: map-get($colors, 'primary-white');
+  }
+
+}
 
 
 

@@ -10,7 +10,7 @@ body {
   font-family: 'Barlow Condensed', sans-serif;
   min-height: 100vh;
   background-image: url("../static/Image/backgroung-triangle-1.svg"),
-                    url("../static/Image/background-triangle-2.svg");
+  url("../static/Image/background-triangle-2.svg");
   background-repeat: no-repeat;
   background-position: left 0 bottom 180vh, right 0 bottom 90vh;
 
@@ -34,16 +34,14 @@ body {
 }
 
 .hero {
-  background-image:
-                    url("../static/Image/wave-background.svg"),
-                    linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%),
-                    url("../static/Image/sky-background.jpg");
+  background-image: url("../static/Image/wave-background.svg"),
+  linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%),
+  url("../static/Image/sky-background.jpg");
   background-repeat: no-repeat;
-  background-size:  contain,cover,cover;
-  background-position:
-                        bottom -7px left 0,
-                        top,
-                        center;
+  background-size: contain, cover, cover;
+  background-position: bottom -7px left 0,
+  top,
+  center;
 }
 
 

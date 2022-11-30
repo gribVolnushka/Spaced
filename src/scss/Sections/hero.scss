@@ -12,14 +12,15 @@
     padding-bottom: 50px;
   }
 }
+
 .hero__title {
   width: 480px;
-  font-weight: map-get($font-weight,'extrabold');
+  font-weight: map-get($font-weight, 'extrabold');
   font-size: 9.6rem;
   line-height: 1.2;
   letter-spacing: 0.06rem;
   text-transform: uppercase;
-  color: map-get($colors,'primary-white');
+  color: map-get($colors, 'primary-white');
   margin-bottom: 125px;
 
   @include media-screen-desktop() {
@@ -47,8 +48,8 @@
   justify-content: center;
   padding: 9px;
   margin-bottom: 8px;
-  background-color: map-get($colors,'primary-white');
-  background-image:  linear-gradient( -65deg, #00FFBB 0% 11%, #FFFFFF 11% 89%, #00FFBB 89% 100% );
+  background-color: map-get($colors, 'primary-white');
+  background-image: linear-gradient(-65deg, #00FFBB 0% 11%, #FFFFFF 11% 89%, #00FFBB 89% 100%);
 
   @include mobile-screen-desktop() {
     width: 100%;
@@ -66,8 +67,8 @@
 
 .hero__text {
   @include text();
-  font-weight: map-get($font-weight,'bold');
-  color: map-get($colors,'primary-black');
+  font-weight: map-get($font-weight, 'bold');
+  color: map-get($colors, 'primary-black');
   letter-spacing: 0.05rem;
 
   @include mobile-screen-desktop() {
@@ -77,8 +78,8 @@
 
 .hero__paragraph {
   @include text();
-  font-weight: map-get($font-weight,'medium');
-  color: map-get($colors,'primary-black');
+  font-weight: map-get($font-weight, 'medium');
+  color: map-get($colors, 'primary-black');
   letter-spacing: 0.05rem;
   text-decoration: underline;
 
@@ -97,16 +98,16 @@
   display: flex;
   gap: 57px;
   padding: 32px 41px;
-  background-color: map-get($colors,'primary-white');
+  background-color: map-get($colors, 'primary-white');
   background-image: url("../static/Image/grey-arrow-down.svg"),
-                    url("../static/Image/grey-arrow-down.svg"),
-                    url("../static/Image/grey-arrow-down.svg"),
-                    url("../static/Image/grey-arrow-down.svg");
+  url("../static/Image/grey-arrow-down.svg"),
+  url("../static/Image/grey-arrow-down.svg"),
+  url("../static/Image/grey-arrow-down.svg");
   background-repeat: no-repeat;
   background-position: bottom 45px left 190px,
-                       bottom 45px left 320px,
-                       bottom 45px right 260px,
-                       bottom 45px right 85px;
+  bottom 45px left 320px,
+  bottom 45px right 260px,
+  bottom 45px right 85px;
 
   @include media-screen-desktop() {
     background-image: unset;
@@ -130,9 +131,9 @@
 .hero__span {
   @include text();
   display: block;
-  font-weight: map-get($font-weight,'medium');
+  font-weight: map-get($font-weight, 'medium');
   letter-spacing: 0.05rem;
-  color: map-get($colors,'primary-grey');
+  color: map-get($colors, 'primary-grey');
   margin-bottom: 1px;
 
   @include small-screen-desktop() {
@@ -149,9 +150,9 @@
   -webkit-appearance: unset;
   background-color: transparent;
   border: none;
-  font-weight: map-get($font-weight,'extrabold');
+  font-weight: map-get($font-weight, 'extrabold');
   font-size: 3.6rem;
-  color: map-get($colors,'tertiary-black');
+  color: map-get($colors, 'tertiary-black');
   line-height: calc(43 / 36);
   letter-spacing: 0.05rem;
 
@@ -167,9 +168,9 @@
 
 .hero__button {
   min-width: 200px;
-  background-color: map-get($colors,'tertiary-black');
-  color: map-get($colors,'turquiose');
-  font-weight: map-get($font-weight,'bold');
+  background-color: map-get($colors, 'tertiary-black');
+  color: map-get($colors, 'turquiose');
+  font-weight: map-get($font-weight, 'bold');
   font-size: 3.6rem;
   line-height: calc(43 / 36);
   letter-spacing: 0.08rem;

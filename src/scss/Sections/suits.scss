@@ -30,7 +30,7 @@
   }
 
   @include mobile-screen-desktop() {
-   gap: 10px;
+    gap: 10px;
   }
 }
 
@@ -45,8 +45,8 @@
 
 .suits__title {
   @include title();
-  font-weight: map-get($font-weight,'bold');
-  color: map-get($colors,'secondary-black');
+  font-weight: map-get($font-weight, 'bold');
+  color: map-get($colors, 'secondary-black');
   margin-bottom: 24px;
 
   @include small-screen-desktop() {
@@ -62,8 +62,8 @@
 
 .suits__text {
   @include paragraph();
-  font-weight: map-get($font-weight,'medium');
-  color: map-get($colors,'secondary-black');
+  font-weight: map-get($font-weight, 'medium');
+  color: map-get($colors, 'secondary-black');
   margin-bottom: 16px;
 
   @include small-screen-desktop() {
@@ -78,8 +78,8 @@
 
 .suits__paragraph {
   @include paragraph();
-  font-weight: map-get($font-weight,'medium');
-  color: map-get($colors,'secondary-black');
+  font-weight: map-get($font-weight, 'medium');
+  color: map-get($colors, 'secondary-black');
   margin-bottom: 36px;
 
   @include small-screen-desktop() {
@@ -99,9 +99,9 @@
 .suits__button {
   min-width: 152px;
   padding: 16px 28px 16px 16px;
-  background-color: map-get($colors,'secondary-black');
-  color: map-get($colors,'turquiose');
-  font-weight: map-get($font-weight,'bold');
+  background-color: map-get($colors, 'secondary-black');
+  color: map-get($colors, 'turquiose');
+  font-weight: map-get($font-weight, 'bold');
   font-size: 2.4rem;
   line-height: calc(35 / 24);
   letter-spacing: 0.05rem;

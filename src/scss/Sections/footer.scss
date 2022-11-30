@@ -1,8 +1,8 @@
 .footer {
   padding-top: 32px;
   padding-bottom: 16px;
-  background-color: map-get($colors,'secondary-black');
-  color:  map-get($colors,'primary-white');
+  background-color: map-get($colors, 'secondary-black');
+  color: map-get($colors, 'primary-white');
 
   @include mobile-screen-desktop() {
     padding-top: 15px;
@@ -33,7 +33,7 @@
   align-items: center;
 
   @include small-screen-desktop() {
-   gap: 10px;
+    gap: 10px;
   }
 
 }
@@ -46,7 +46,7 @@
 
 .footer__subtitle {
   @include paragraph();
-  color: map-get($colors,'secondary-grey') ;
+  color: map-get($colors, 'secondary-grey');
 
   @include mobile-screen-desktop() {
     @include media-text();
@@ -55,12 +55,12 @@
 
 .footer__link {
   @include paragraph();
-  color: map-get($colors,'primary-white') ;
-  font-weight: map-get($font-weight,'semibold');
+  color: map-get($colors, 'primary-white');
+  font-weight: map-get($font-weight, 'semibold');
   text-decoration: underline;
 
   @include small-screen-desktop() {
-   @include media-text();
+    @include media-text();
   }
 
   @include mobile-screen-desktop() {
@@ -75,9 +75,9 @@
 }
 
 .footer__text {
-  font-weight: map-get($font-weight,'semibold');
+  font-weight: map-get($font-weight, 'semibold');
   font-size: 1.2rem;
   line-height: calc(17 / 12);
-  color: map-get($colors,'primary-grey') ;
+  color: map-get($colors, 'primary-grey');
   text-transform: uppercase;
 }
